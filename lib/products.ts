@@ -1,8 +1,16 @@
+import type { StaticImageData } from "next/image"
+import wirelessHeadphonesPro from "@/public/images/products/wireless-headphones-pro.jpg"
+import usbcFastCharger from "@/public/images/products/usb-c-fast-charger.jpg"
+import phoneScreenProtector from "@/public/images/products/phone-screen-protector.jpg"
+import portablePowerBank from "@/public/images/products/portable-power-bank.jpg"
+import cableOrganizerSet from "@/public/images/products/cable-organizer-set.jpg"
+import bluetoothSpeakerMini from "@/public/images/products/bluetooth-speaker-mini.jpg"
+
 export interface Product {
   id: string
   name: string
   price: number
-  image: string
+  image: StaticImageData
   description: string
   category: string
   stock: number
@@ -14,7 +22,7 @@ export const products: Product[] = [
     id: "1",
     name: "Wireless Headphones Pro",
     price: 199.99,
-    image: "/wireless-headphones-pro.jpg",
+    image: wirelessHeadphonesPro,
     description: "Premium wireless headphones with active noise cancellation and 30-hour battery life.",
     category: "Audio",
     stock: 15,
@@ -24,7 +32,7 @@ export const products: Product[] = [
     id: "2",
     name: "USB-C Fast Charger",
     price: 49.99,
-    image: "/usb-c-fast-charger.jpg",
+    image: usbcFastCharger,
     description: "65W USB-C fast charger compatible with all devices.",
     category: "Chargers",
     stock: 45,
@@ -34,7 +42,7 @@ export const products: Product[] = [
     id: "3",
     name: "Phone Screen Protector",
     price: 14.99,
-    image: "/phone-screen-protector.jpg",
+    image: phoneScreenProtector,
     description: "Tempered glass screen protector with 9H hardness rating.",
     category: "Accessories",
     stock: 120,
@@ -44,7 +52,7 @@ export const products: Product[] = [
     id: "4",
     name: "Portable Power Bank 30000mAh",
     price: 79.99,
-    image: "/portable-power-bank.jpg",
+    image: portablePowerBank,
     description: "High capacity power bank with fast charging support and LED display.",
     category: "Power Banks",
     stock: 32,
@@ -54,7 +62,7 @@ export const products: Product[] = [
     id: "5",
     name: "Cable Organizer Set",
     price: 24.99,
-    image: "/cable-organizer-set.jpg",
+    image: cableOrganizerSet,
     description: "Premium cable organizer set to keep your workspace tidy.",
     category: "Accessories",
     stock: 89,
@@ -64,7 +72,7 @@ export const products: Product[] = [
     id: "6",
     name: "Bluetooth Speaker Mini",
     price: 59.99,
-    image: "/bluetooth-speaker-mini.jpg",
+    image: bluetoothSpeakerMini,
     description: "Compact Bluetooth speaker with 12-hour battery and waterproof design.",
     category: "Audio",
     stock: 28,
